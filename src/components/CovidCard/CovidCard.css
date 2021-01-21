@@ -1,0 +1,44 @@
+.covid-card {
+  border-radius: 7px;
+  width: 350px !important;
+  height: 180px;
+  text-align: center;
+  background-color: #6B3ECC;
+  color: #fff;
+  position: relative;
+  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, 0.3s ease;
+}
+
+.covid-card h1 {
+  font-weight: lighter !important;
+  position: absolute;
+  margin-right: -50%;
+  top: 50%;
+  font-size: 2rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.covid-card h2 {
+  font-weight: lighter !important;
+  margin-top: 2rem;
+}
+
+
+.covid-card:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 992px) {
+  .covid-card {
+    margin-top: 3rem;
+    height: 150px;
+    width: 300px !important;
+  }
+
+}
